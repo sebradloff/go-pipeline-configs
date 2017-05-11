@@ -9,4 +9,7 @@ pipelines:
           jobs:
             build:
               tasks:
-                script: echo "HELLO"
+                - exec:
+                    command: echo
+                    arguments:
+                      - "Hello World"
