@@ -1,6 +1,6 @@
 pipelines:
   MovieSurferPipe:
-    group: MovieSurfer
+    group: applications
     materials:
       mygit:
         git: https://github.com/sebradloff/movie-surfer.git
@@ -12,4 +12,4 @@ pipelines:
                 - exec:
                     command: echo
                     arguments:
-                      - "Hello World"
+                      - "Hello World FROM a git server!!"
