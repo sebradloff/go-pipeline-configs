@@ -1,5 +1,5 @@
 pipelines:
-  MovieSurferPipe:
+  MovieSurfer:
     group: applications
     materials:
       mygit:
