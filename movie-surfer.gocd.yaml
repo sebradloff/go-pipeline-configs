@@ -6,6 +6,7 @@ pipelines:
         git: https://github.com/sebradloff/movie-surfer.git
     stages:
       - Build:
+          clean_workspace: true
           jobs:
             Build:
               tasks:
