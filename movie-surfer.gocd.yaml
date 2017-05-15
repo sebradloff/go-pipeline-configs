@@ -10,6 +10,6 @@ pipelines:
             build:
               tasks:
                 - exec:
-                    command: echo
+                    command: npm
                     arguments:
-                      - "Hello World FROM a git server!!"
+                      - install
