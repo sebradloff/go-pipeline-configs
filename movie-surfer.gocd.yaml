@@ -5,11 +5,19 @@ pipelines:
       mygit:
         git: https://github.com/sebradloff/movie-surfer.git
     stages:
-      - build:
+      - Build:
           jobs:
-            build:
+            Build:
               tasks:
                 - exec:
                     command: npm
                     arguments:
                       - install
+      - UnitTest:
+          jobs:
+            UnitTest:
+              tasks:
+                - exec:
+                    command: npm
+                    arguments:
+                      - test
