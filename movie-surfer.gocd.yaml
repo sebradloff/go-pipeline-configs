@@ -10,10 +10,7 @@ pipelines:
           jobs:
             Build:
               tasks:
-                - exec:
-                    command: npm
-                    arguments:
-                      - install
+                - script: docker build -t movie-surfer .
       - UnitTest:
           jobs:
             UnitTest:
